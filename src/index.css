@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Custom Fonts & Global Styling */
+@layer base {
+  body {
+    background-color: #0A0A0B;
+    color: #EDEDED;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+/* Custom Webkit scrollbars representing the CS competitive dark style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 184, 0, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 184, 0, 0.5);
+}
+
+/* Pulse animation for Discord simulation log status */
+@keyframes signal-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+}
+
+.animate-pulse-slow {
+  animation: signal-pulse 3s infinite ease-in-out;
+}
+
+/* Map background patterns if we want text labels */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.04);
+  color: transparent;
+}

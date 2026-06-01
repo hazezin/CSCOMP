@@ -1,0 +1,6 @@
+{
+  "name": "CS Competitive Ladder",
+  "description": "A Counter Strike competitive league ladder featuring an ELO ratings system, player stats, season resets, match submission form, Discord bot webhook simulation, and admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
